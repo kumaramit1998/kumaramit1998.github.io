@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Amit Kumar - Developer Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
@@ -14,47 +13,56 @@
     }
   </style>
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-gray-100 text-gray-800 flex">
 
-<!-- Hero Section -->
-<section class="relative bg-gradient-to-r from-indigo-900 via-purple-900 to-orange-500 text-white py-20 text-center overflow-hidden">
-  <!-- Animated Circles -->
-  <div class="absolute -top-10 -left-10 w-72 h-72 bg-white bg-opacity-10 rounded-full blur-3xl animate-pulse"></div>
-  <div class="absolute top-0 right-0 w-60 h-60 bg-white bg-opacity-10 rounded-full blur-2xl animate-ping"></div>
+  <!-- Sidebar -->
+  <aside class="w-72 bg-green-600 text-white min-h-screen p-6 flex flex-col items-center sticky top-0">
+    <img src="profile.jpg" alt="Amit Kumar" class="w-48 h-48 rounded-full border-4 border-white shadow-lg mb-4" />
+    <h1 class="text-2xl font-bold">Amit Kumar</h1>
+    <p class="text-center text-sm mt-2">Hi, I'm Amit Kumar and I'm a software developer at Mercedes-Benz R&D India.</p>
 
-  <!-- Profile Image with Glow -->
-  <div class="flex justify-center mb-6">
-    <div class="p-1 rounded-full bg-gradient-to-r from-white/50 to-white/20 shadow-lg">
-      <img src="profile.jpg" alt="Amit Kumar" class="w-36 h-36 rounded-full border-4 border-white shadow-inner hover:scale-105 transition-transform duration-300" />
+    <!-- Social Icons -->
+    <div class="flex justify-center gap-4 mt-4">
+      <a href="mailto:amit25111998@gmail.com" class="hover:text-gray-300">📧</a>
+      <a href="https://linkedin.com/in/amit-kumar-79a9b2137" target="_blank" class="hover:text-gray-300">🔗</a>
+      <a href="https://github.com/yourusername" target="_blank" class="hover:text-gray-300">🐱</a>
     </div>
-  </div>
 
-  <!-- Name and Role -->
-  <h1 class="text-5xl font-extrabold tracking-wide">Amit Kumar</h1>
-  <p class="text-xl mt-2 font-medium">Software Developer @ Mercedes-Benz R&D India</p>
-  <p class="text-base opacity-90 mt-1 italic">Crafting clean code & elegant engineering with ML & Python</p>
+    <!-- Navigation -->
+    <nav class="mt-6 w-full">
+      <ul class="space-y-3 text-sm font-semibold">
+        <li><a href="#about" class="block hover:text-gray-300">About Me</a></li>
+        <li><a href="#experience" class="block hover:text-gray-300">Experience</a></li>
+        <li><a href="#education" class="block hover:text-gray-300">Education</a></li>
+        <li><a href="#projects" class="block hover:text-gray-300">Projects</a></li>
+        <li><a href="#contact" class="block hover:text-gray-300">Contact</a></li>
+      </ul>
+    </nav>
 
-  <!-- CTA Buttons -->
-  <div class="flex justify-center flex-wrap gap-4 mt-6">
-    <a href="Amit_Kumar_Resume.pdf" target="_blank" class="bg-white text-indigo-700 font-semibold px-6 py-2 rounded-full shadow-md hover:bg-indigo-100 transition-all">📄 View Resume</a>
-    <a href="https://linkedin.com/in/amit-kumar-79a9b2137" target="_blank" class="bg-white text-blue-600 font-semibold px-6 py-2 rounded-full shadow-md hover:bg-blue-100 transition-all">🔗 Connect on LinkedIn</a>
-  </div>
-</section>
+    <a href="Amit_Kumar_Resume.pdf" target="_blank" class="mt-6 bg-white text-green-700 px-4 py-2 rounded shadow hover:bg-gray-100">📄 View Resume</a>
+  </aside>
 
+  <!-- Main Content -->
+  <main class="flex-1 p-8">
+    <!-- Hero Section -->
+    <section class="text-center mb-12">
+      <h1 class="text-4xl font-extrabold">Amit Kumar</h1>
+      <p class="text-lg mt-2">Software Developer @ Mercedes-Benz R&D India</p>
+      <p class="text-sm mt-1 italic">Deep Learning | Python | Clean Architecture</p>
+    </section>
 
-  <!-- About Section -->
-  <section class="max-w-4xl mx-auto py-12 px-6">
-    <h2 class="text-2xl font-bold border-l-4 border-orange-500 pl-3 mb-4">About Amit</h2>
-    <p class="text-gray-700">
-      I'm a backend-focused software developer with a Master's from IIT Hyderabad and strong interests in deep learning and elegant systems design. I work with tools like Python, C++, and Java, and am currently contributing to automotive innovations at Mercedes-Benz R&D India. I aim to deliver consistent, clean, and impactful code.
-    </p>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="mb-12">
+      <h2 class="text-2xl font-bold border-l-4 border-orange-500 pl-3 mb-4">About Amit</h2>
+      <p>
+        I'm a backend-focused software developer with a Master's from IIT Hyderabad and strong interests in deep learning and elegant systems design. I work with tools like Python, C++, and Java, and am currently contributing to automotive innovations at Mercedes-Benz R&D India. I aim to deliver consistent, clean, and impactful code.
+      </p>
+    </section>
 
-  <!-- Experience Section -->
-  <section class="bg-gray-50 py-12 px-6">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-2xl font-bold border-l-4 border-orange-500 pl-3 mb-6">Experience</h2>
-      <div class="grid gap-6 md:grid-cols-2">
+    <!-- Experience Section -->
+    <section id="experience" class="mb-12">
+      <h2 class="text-2xl font-bold border-l-4 border-orange-500 pl-3 mb-4">Experience</h2>
+      <div class="space-y-6">
         <div class="bg-white p-5 rounded shadow">
           <h3 class="font-semibold text-lg">Mercedes-Benz R&D India</h3>
           <p class="text-sm text-gray-500">Sep 2023 – Present</p>
@@ -72,29 +80,27 @@
           </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Education Section -->
-  <section class="max-w-4xl mx-auto py-12 px-6">
-    <h2 class="text-2xl font-bold border-l-4 border-orange-500 pl-3 mb-6">Education</h2>
-    <div class="grid gap-6 md:grid-cols-2">
-      <div class="bg-gray-100 p-4 rounded">
-        <h3 class="font-semibold text-lg">IIT Hyderabad</h3>
-        <p class="text-sm text-gray-600">M.Tech – CSE | 2021 – 2023</p>
+    <!-- Education Section -->
+    <section id="education" class="mb-12">
+      <h2 class="text-2xl font-bold border-l-4 border-orange-500 pl-3 mb-4">Education</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white p-4 rounded shadow">
+          <h3 class="font-semibold text-lg">IIT Hyderabad</h3>
+          <p class="text-sm text-gray-600">M.Tech – CSE | 2021 – 2023</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+          <h3 class="font-semibold text-lg">NIT Arunachal Pradesh</h3>
+          <p class="text-sm text-gray-600">B.Tech – CSE | 2016 – 2020</p>
+        </div>
       </div>
-      <div class="bg-gray-100 p-4 rounded">
-        <h3 class="font-semibold text-lg">NIT Arunachal Pradesh</h3>
-        <p class="text-sm text-gray-600">B.Tech – CSE | 2016 – 2020</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects Section -->
-  <section class="bg-gray-50 py-12 px-6">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-2xl font-bold border-l-4 border-orange-500 pl-3 mb-6">Projects</h2>
-      <div class="grid gap-6 md:grid-cols-2">
+    <!-- Projects Section -->
+    <section id="projects" class="mb-12">
+      <h2 class="text-2xl font-bold border-l-4 border-orange-500 pl-3 mb-4">Projects</h2>
+      <div class="grid md:grid-cols-2 gap-6">
         <div class="bg-white p-5 rounded shadow">
           <h3 class="font-semibold">Vein Cannulation System</h3>
           <p class="text-sm text-gray-600">Autoencoder, 3D depth, ML</p>
@@ -108,15 +114,15 @@
           <p class="text-sm text-gray-600">Real-time facial analysis</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section class="max-w-4xl mx-auto py-12 px-6">
-    <h2 class="text-2xl font-bold border-l-4 border-orange-500 pl-3 mb-4">Contact</h2>
-    <p class="text-gray-700 text-center">📧 amit25111998@gmail.com</p>
-    <p class="text-gray-700 text-center">🔗 <a href="https://github.com/yourusername" target="_blank" class="text-blue-600 underline">GitHub</a></p>
-  </section>
+    <!-- Contact Section -->
+    <section id="contact" class="mb-12 text-center">
+      <h2 class="text-2xl font-bold border-l-4 border-orange-500 pl-3 mb-4 inline-block">Contact</h2>
+      <p>📧 amit25111998@gmail.com</p>
+      <p>🔗 <a href="https://github.com/yourusername" target="_blank" class="text-blue-600 underline">GitHub</a></p>
+    </section>
+  </main>
 
 </body>
 </html>
